@@ -23,7 +23,6 @@ sed -i -e 's,USER=debian-transmission,USER=root,g' /etc/init.d/transmission-daem
 CONFIG_FILE=/etc/transmission-daemon/settings.json
 sed -i -e 's#"download-dir": "/var/lib/transmission-daemon/downloads",#"download-dir": "/mnt/by-uuid",#g' $CONFIG_FILE
 sed -i -e 's#"port-forwarding-enabled": false,#"port-forwarding-enabled": true,#g' $CONFIG_FILE
-sed -i -e 's###g' $CONFIG_FILE
 sed -i -e 's#"preallocation": 1,#"preallocation": 2,#g' $CONFIG_FILE
 sed -i -e 's#"ratio-limit": 2,#"ratio-limit": 0.0,#g' $CONFIG_FILE
 sed -i -e 's#"ratio-limit-enabled": false,#"ratio-limit-enabled": true,#g' $CONFIG_FILE
