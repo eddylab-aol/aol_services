@@ -37,3 +37,6 @@ sed -i -e 's#"upload-limit-enabled": 0,#"upload-limit-enabled": 1,#g' $CONFIG_FI
 # enable service
 update-rc.d transmission-daemon defaults
 
+# enable enhanced web ui
+echo -e "1\n" | bash <(curl -fsSL https://github.com/ronggang/transmission-web-control/raw/master/release/install-tr-control.sh)
+
