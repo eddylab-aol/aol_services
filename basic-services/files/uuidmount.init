@@ -1,0 +1,34 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          uuidmount
+# Required-Start:    hostname
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:
+# Short-Description: uuidmount script
+# Description:       uuidmount by djjproject
+### END INIT INFO
+
+do_start() {
+	nohup /usr/sbin/uuidmount < /dev/null > /dev/null 2>&1 &
+}
+
+case "$1" in
+  start)
+    do_start
+  ;;
+  stop)
+
+  ;;
+  restart)
+
+  ;;
+  *)
+    echo "Usage: "$1" {start|stop|restart}"
+    exit 1
+  ;;
+esac
+
+exit 0
+
