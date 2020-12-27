@@ -9,6 +9,7 @@ function output {
 }
 
 WORK_DIR=/tmp/installer
+cd $WORK_DIR
 
 output "install basic services..."
 
