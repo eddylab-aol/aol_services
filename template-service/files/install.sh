@@ -9,6 +9,8 @@ function output {
 }
 
 SERVICE_NAME=""
+WORK_DIR="/tmp/installer"
+cd $WORK_DIR
 
 output "### install $SERVICE_NAME..."
 
