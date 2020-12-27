@@ -26,7 +26,7 @@ sed -i -e 's#"port-forwarding-enabled": false,#"port-forwarding-enabled": true,#
 sed -i -e 's#"preallocation": 1,#"preallocation": 2,#g' $CONFIG_FILE
 sed -i -e 's#"ratio-limit": 2,#"ratio-limit": 0.0,#g' $CONFIG_FILE
 sed -i -e 's#"ratio-limit-enabled": false,#"ratio-limit-enabled": true,#g' $CONFIG_FILE
-sed -i -e 's#"rpc-password": "{140089dec5140d3a389700f369951fc0102e23dfiIN3XLZu",#"rpc-password": "androidoverlinux",#g' $CONFIG_FILE
+sed -i -e 's#.*rpc-password.*#    "rpc-password": "androidoverlinux",#g' $CONFIG_FILE
 sed -i -e 's#"rpc-username": "transmission",#"rpc-username": "admin",#g' $CONFIG_FILE
 sed -i -e 's#"rpc-whitelist-enabled": true,#"rpc-whitelist-enabled": false,#g' $CONFIG_FILE
 sed -i -e 's#"umask": 18,#"umask": 0,#g' $CONFIG_FILE
