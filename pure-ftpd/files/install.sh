@@ -28,7 +28,7 @@ echo "yes" > $CONF_DIR/ChrootEveryone
 echo "yes" > $CONF_DIR/NoAnonymous
 echo "49152 65534" > $CONF_DIR/PassivePortRange
 echo "21" > $CONF_DIR/Bind
-cd $COND_DIR/auth
+cd $CONF_DIR/auth
 ln -s ../conf/PureDB 50pure
 cd -
 
